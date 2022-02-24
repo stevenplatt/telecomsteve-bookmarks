@@ -1,0 +1,57 @@
+.bookmarks-container {
+	justify-content: center;
+}
+
+.flex-container {
+	margin: 5% 5% 5% 25%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: DodgerBlue;
+}
+
+.flex-container > div {
+	background-color: #f1f1f1;
+	flex-basis: 29%;
+	min-height: 200px;
+	min-width: 200px;
+	margin: 2%;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+}
+
+.splash {
+	display: flex;
+	margin-left: 20%;
+	height: 99vh;
+	justify-content: center;
+}
+
+.splash > img {
+	max-width: 70%;
+}
+
+@media screen and (max-width: 700px) {
+	.flex-container {
+		margin: 5% 5% 5% 5%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.flex-container > div {
+		flex-basis: 70%;
+		margin: 7% 5% 7% 5%;
+		min-width: 300px;
+	}
+
+	.splash {
+		margin-left: 0%;
+		left: 0px;
+		position: absolute;
+		top: 0%;
+	}
+
+	.splash > img {
+		max-width: 80%;
+	}
+}

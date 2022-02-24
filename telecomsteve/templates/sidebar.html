@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" type="image/png" href="../static/img/favicon.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>telecomsteve</title>
+    <link rel="stylesheet" href="../static/css/stylesheet.css">
+    <link rel="stylesheet" href="../static/css/bookmarks.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <div class="navblock">
+            <div class="navblock_text">
+                {% if name %}    
+                    <a href="{{ url_for('logout') }}">logout</a>
+                {% else %}
+                    <a href="{{ url_for('login') }}">login</a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="footer">
+            <!--<a href="#">Login</a>-->
+            <p>&copy; telecomsteve</p>
+        </div>
+    </div>
+
+    {% block content %} {% endblock %}
+
+</body>
+
+</html>
